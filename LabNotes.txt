@@ -1,6 +1,0 @@
-Configure router as dhcp client:
-conf t
-int fa0/0
-ip add dhcp
-end
-show ip int brief
