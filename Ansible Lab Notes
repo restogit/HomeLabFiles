@@ -1,0 +1,24 @@
+ansible hosts.ini file:
+[all:vars]
+ansible_connection=network_cli
+ansible_network_os=ios
+ansible_user=cisco
+ansible_password=password
+ansible_become=yes
+ansible_become_pass=password
+
+[routers]
+CRouter1 ansible_host=192.168.190.10
+CRouter2 ansible_host=192.168.190.12
+
+[switches]
+CSwitch1 ansible_host=192.168.190.11
+CSwitch2 ansible_host=192.168.190.13
+
+adhoc commands:
+ansible all -m ping
+ansible routers -i hosts.ini -m ping
+ansible switches -i hosts.ini -m ping
+ansible all -i hosts.ini -m ios_facts -c local
+ansible routers -i hosts.ini -m ios_facts -c local
+ansible switches -i hosts.ini -m ios_facts -c local
