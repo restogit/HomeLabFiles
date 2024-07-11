@@ -1,22 +1,22 @@
 ## Switches/Routers config, use different IP addresses:
 
-enable
-conf t
-hostname <devicename>
-interface <fast or gig> <interface number>
-ip address <ip address> <subnet mask>
-exit
-enable password <password>
-username <username> secret <password>
-line vty 0 15
-login local
-transport input ssh
-exit
-ip domain-name <domain name>
-crypto key generate rsa
-2048
-ip ssh version 2
-end
-write
+enable  
+conf t  
+hostname <devicename>  
+interface <fast or gig> <interface number>  
+ip address <ip address> <subnet mask>  
+exit  
+enable password <password>  
+username <username> secret <password>  
+line vty 0 15  
+login local  
+transport input ssh  
+exit  
+ip domain-name <domain name>  
+crypto key generate rsa  
+2048  
+ip ssh version 2  
+end  
+write  
 
 
