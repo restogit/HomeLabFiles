@@ -1,4 +1,4 @@
-Switches/Routers config, use different IPs:
+## Switches/Routers config, use different IP addresses:
 
 enable
 conf t
