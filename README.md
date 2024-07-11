@@ -3,4 +3,4 @@
 2. Lab notes files contain any commands I've used in my home/work labs.
 
 # Network Automation GNS3 Lab Layout
-![GNS3 Lab Layout](Network-Automation-Lab/NetworkAutomationGNS3Layout.png)
+<img src="https://github.com/restogit/Network-Automation-Lab/blob/f57bc819886a0dc959de4972bccc2adb2c96cb8a/NetworkAutomationGNS3Layout.png"></img>
