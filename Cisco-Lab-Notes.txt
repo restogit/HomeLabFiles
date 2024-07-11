@@ -1,5 +1,4 @@
 Switches/Routers config, use different IP addresses:
-
 enable
 conf t
 hostname <devicename>
@@ -18,5 +17,8 @@ crypto key generate rsa
 ip ssh version 2
 end
 write
+
+Enable telnet debug:
+debug telnet
 
 
