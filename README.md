@@ -3,7 +3,7 @@
 2. Lab notes files contain any commands I've used in my home/work labs.
 
 # Network Automation with Ansible GNS3 Lab Layout:
-<img src="https://github.com/restogit/Network-Automation-Lab/blob/f57bc819886a0dc959de4972bccc2adb2c96cb8a/NetworkAutomationGNS3Layout.png"></img>
+<img src="NetworkAutomationGNS3Layout.png"></img>
 
 # Network Automation with Python GNS3 Lab Layout:
 <img src="NetAutwithPythonGNS3Layout.png"></img>
