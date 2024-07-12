@@ -1,0 +1,11 @@
+Commands to check and edit the virtual bridge NIC:
+
+List default info: virsh net-list default
+
+Show default config:  virsh net-dumpxml default
+
+Edit default config: virsh net-edit default
+
+Stop default config: virsh net-destroy default
+
+Start default config: virsh net-start default
