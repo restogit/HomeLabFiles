@@ -1,3 +1,10 @@
+Set virsh editor:
+
+touch ~/.selected_editor
+nano ~/.selected_editor
+Add SELECTED_EDITOR=/usr/bin/micro
+Exit and save the file
+
 Commands to check and edit the virtual bridge NIC:
 
 List default info: virsh net-list
