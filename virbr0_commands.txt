@@ -1,6 +1,6 @@
 Commands to check and edit the virtual bridge NIC:
 
-List default info: virsh net-list default
+List default info: virsh net-list
 
 Show default config:  virsh net-dumpxml default
 
