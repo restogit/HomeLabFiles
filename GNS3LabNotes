@@ -1,8 +1,7 @@
 Linux Mint GNS3 Error:
 Could not start Telnet console with command 'xterm -T "NetAutPC1" -e "telnet 192.168.56.101 5000"': [Errno 2] No such file or directory: 'xterm'
 
-Fix:
-sudo apt install -y xterm
-
-Or change console app to 'gnome-terminal' in GNS3 Preferences
+Possible fixes:
+Install xterm with this command :sudo apt install -y xterm
+Or change GNS3's console app to 'gnome-terminal' in GNS3 Preferences
 gnome-terminal is installed by default in Linux Mint
