@@ -1,0 +1,4 @@
+Create iso file from cd/dvd:
+Unmount cd/dvd: umount /dev/sr0
+Get block/volume size: sudo isoinfo -d -i /dev/sr0 | grep -i -E 'block size|volume size'
+Create the iso: dd if=/dev/sr0 of=name.iso bs=<block number from above command> count=<volume number from above command> status=progress
