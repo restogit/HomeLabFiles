@@ -5,3 +5,22 @@ Create the iso: dd if=/dev/sr0 of=name.iso bs=<block number from above command> 
 
 Pull BIOS embedded key:
 sudo strings /sys/firmware/acpi/tables/MSDM
+
+Set virsh editor:
+
+touch ~/.selected_editor
+nano ~/.selected_editor
+Add SELECTED_EDITOR=/usr/bin/micro
+Exit and save the file
+
+Commands to check and edit the virtual bridge NIC:
+
+List default info: virsh net-list
+
+Show default config:  virsh net-dumpxml default
+
+Edit default config: virsh net-edit default
+
+Stop default config: virsh net-destroy default
+
+Start default config: virsh net-start default
