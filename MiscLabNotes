@@ -24,3 +24,8 @@ Edit default config: virsh net-edit default
 Stop default config: virsh net-destroy default
 
 Start default config: virsh net-start default
+
+.bash_aliases file:
+alias cls=/usr/bin/clear
+alias nano=/usr/bin/micro
+alias py=/usr/bin/python3
