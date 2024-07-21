@@ -1,3 +1,5 @@
+To copy-n-paste text from Windows into Putty session, use Shift+Insert
+
 Create iso file from cd/dvd:
 Unmount cd/dvd: umount /dev/sr0
 Get block/volume size: sudo isoinfo -d -i /dev/sr0 | grep -i -E 'block size|volume size'
