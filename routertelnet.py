@@ -14,7 +14,7 @@ if password:
     tn.write(password.encode('ascii') + b"\n")
 
 tn.write(b"enable\n")
-tn.write(b"password\n")
+tn.write(b"cisco\n")
 tn.write(b"conf t\n")
 tn.write(b"int loop 0\n")
 tn.write(b"ip address 1.1.1.1 255.255.255.255\n")
@@ -23,6 +23,8 @@ tn.write(b"ip address 2.2.2.2 255.255.255.255\n")
 tn.write(b"router ospf 1\n")
 tn.write(b"network 0.0.0.0 255.255.255.255 area 0\n")
 tn.write(b"end\n")
+# Show interface configuration change
+tn.write(b"show ip int brief\n")
 tn.write(b"exit\n")
 
 print(tn.read_all().decode('ascii'))
