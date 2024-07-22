@@ -21,4 +21,15 @@ write
 Enable telnet debug:
 debug telnet
 
+Switch interface configuration is different.
+By configuring VLAN 1 with an IP address,
+there is no need to individually assign IPs to the wired interfaces:
+
+conf t
+int vlan 1
+ip address <ip address> <subneet mask>
+no shut
+end
+
+
 
