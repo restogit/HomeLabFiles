@@ -1,3 +1,5 @@
+Cisco telnet/python quirk: the command 'show ip protocols' does not work in a python script like 'show ip int brief' does
+
 To copy-n-paste text from Windows into Putty session, use Shift+Insert
 
 Create iso file from cd/dvd:
