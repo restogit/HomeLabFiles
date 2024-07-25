@@ -4,6 +4,7 @@ import telnetlib
 HOST = "ip-address-here
 user = input("Enter your telnet username: ")
 password = getpass.getpass()
+enablepass = getpass.getpass()
 
 tn = telnetlib.Telnet(HOST)
 
@@ -14,7 +15,12 @@ if password:
     tn.write(password.encode('ascii') + b"\n")
 
 tn.write(b"enable\n")
-tn.write(b"password\n")
+# Adding 'enable/privileged' password prompt
+# to get rid of hard coded password
+if enablepass:
+    tn.read_until(b"Password )
+    tn.write(enablepass.encode('ascii') + b"\n")
+
 tn.write(b"conf t\n")
 
 # Adding for-loop to create 5 VLANs
