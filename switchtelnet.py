@@ -18,7 +18,7 @@ tn.write(b"enable\n")
 # Adding 'enable/privileged' password prompt
 # to get rid of hard coded password
 if enablepass:
-    tn.read_until(b"Password )
+    tn.read_until(b"Password: ")
     tn.write(enablepass.encode('ascii') + b"\n")
 
 tn.write(b"conf t\n")
