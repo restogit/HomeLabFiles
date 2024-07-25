@@ -16,16 +16,17 @@ if password:
 tn.write(b"enable\n")
 tn.write(b"password\n")
 tn.write(b"conf t\n")
-tn.write(b"vlan 2\n")
-tn.write(b"name Python_VLAN_2\n")
-tn.write(b"vlan 3\n")
-tn.write(b"name Python_VLAN_3\n")
-tn.write(b"vlan 4\n")
-tn.write(b"name Python_VLAN_4\n")
-tn.write(b"vlan 5\n")
-tn.write(b"name Python_VLAN_5\n")
-tn.write(b"show vlan brief\n")
+
+# Adding for-loop to create 5 VLANs
+for v in range(2,6):
+    tn.write(b"vlan " + str(v).encode('ascii') + b"\n")
+    tn.write(b"name VLAN_" + str(v).encode('ascii') + b"\n")
+    
 tn.write(b"end\n")
+
+# Getting confirmation that VLANs were created
+tn.write(b"show vlan brief\n")
+
 tn.write(b"exit\n")
 
 print(tn.read_all().decode('ascii'))
