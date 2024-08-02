@@ -1,0 +1,11 @@
+List of commands used in the labs:
+
+Linux cli:
+nano - text editor
+clear - clear the screen text
+source - load newly created bash aliases files without having to logout/login
+telnet - to connect to the cisco devices remotely
+
+Cisco cli:
+en or enable - to go into enable mode
+show ip int brief - short for show ip interface brief to see current interfaces and IP configuration
