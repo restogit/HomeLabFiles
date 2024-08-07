@@ -1,4 +1,5 @@
 Introduce what the video is about
+update /etc/hosts file
 check switch/router connectivity to netautpc
 connect to switch/router without python
 run python scripts for switch/router
