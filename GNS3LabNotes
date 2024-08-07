@@ -5,3 +5,10 @@ Possible fixes:
 Install xterm with this command :sudo apt install -y xterm
 Or change GNS3's console app to 'gnome-terminal' in GNS3 Preferences
 gnome-terminal is installed by default in Linux Mint
+
+Device images used:
+Router:
+c7200-adventerprisek9-mz.153-3.XB12
+
+Switch:
+vios_l2-adventerprisek9-m.ssa.high_iron_20200929.qcow2
